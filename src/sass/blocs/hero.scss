@@ -189,12 +189,22 @@ section {
         font-family: "MuseoModerno", cursive;
         font-weight: 800;
         font-size: 6em;
-        padding-top: 50vh;
-        padding-left: 12vh;
+        margin-top: 48vh;
+        margin-left: 3vh;
         z-index: 1;
         width: 320px;
-        height: 288px;
+        // height: 288px;
         // position: relative;
+        @media screen and (min-width: 600px) and (min-width: 768px) {
+            justify-content: unset;
+            margin-top: 45vh;
+            margin-left: 5vh;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 8em;
+            margin-top: 50vh;
+            margin-left: 6vh;
+        }
     }
 }
 
@@ -208,6 +218,6 @@ section {
         margin-bottom: 25px;
     }
     h3 {
-        font-size: 5em;
+        font-size: 1em;
     }
 }
