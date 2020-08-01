@@ -1,0 +1,51 @@
+//
+// Tablet
+//
+@media screen and (min-width: 600px) and (min-width: 768px) {
+    section h2 {
+        justify-content: unset;
+        margin-top: 45vh;
+        margin-left: 5vh;
+    }
+}
+
+//
+// Laptop
+//
+@media screen and (min-width: 1024px) {
+    section h2 {
+        font-size: 8em;
+        margin-top: 37vh;
+        margin-left: 6vh;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    section h2 {
+        font-size: 8em;
+        margin-top: 37vh;
+        margin-left: 6vh;
+    }
+}
+
+//
+// 4K
+//
+@media screen and (min-width: 2560px) {
+    section h2 {
+        font-size: 11em;
+        margin-top: 70vh;
+        width: 100%;
+    }
+    section h3 {
+        color: lightcoral;
+        visibility: visible;
+        font-family: "MuseoModerno", cursive;
+        font-weight: 800;
+        font-size: 3em;
+        font-style: italic;
+        margin-left: 6vh;
+        z-index: 1;
+        display: block;
+    }
+}

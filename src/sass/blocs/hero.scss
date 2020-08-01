@@ -6,7 +6,7 @@
 //
 //
 body {
-    background-color: rgb(236, 236, 236);
+    background-color: $not-white;
     overflow-x: hidden;
     min-height: 100vh;
 }
@@ -22,7 +22,7 @@ nav h4 {
 }
 
 h1.hero__title {
-    color: lightcoral;
+    color: $lightpink;
     display: flex;
     justify-content: center;
     font-family: "MuseoModerno", cursive;
@@ -72,18 +72,18 @@ h1.hero__title {
         text-transform: uppercase;
         z-index: 10;
     }
-    span:nth-child(1) {
-        background: lightgreen;
-        transform: rotate(-90deg);
-        transition-delay: 0.5s;
-    }
+    // span:nth-child(1) {
+    //     background: lightgreen;
+    //     transform: rotate(-90deg);
+    //     transition-delay: 0.5s;
+    // }
     span:nth-child(2) {
-        background: lightsteelblue;
+        background: $lightblue;
         transform: rotate(-90deg);
         transition-delay: 0.1s;
     }
     span:nth-child(3) {
-        background: lightcoral;
+        background: $lightpink;
         transform: rotate(-90deg);
         transition-delay: 0s;
     }
@@ -101,29 +101,27 @@ h1.hero__title {
     }
 }
 
-#curtain span:nth-child(1) {
-    background: lightgreen;
-    transform: rotate(-90deg);
-    transition-delay: 0.5s;
-}
-
+// #curtain span:nth-child(1) {
+//     background: lightgreen;
+//     transform: rotate(-90deg);
+//     transition-delay: 0.5s;
+// }
 #curtain span:nth-child(2) {
-    background: lightsteelblue;
+    background: $lightblue;
     transform: rotate(-90deg);
     transition-delay: 0.1s;
 }
 
 #curtain span:nth-child(3) {
-    background: lightcoral;
+    background: $lightpink;
     transform: rotate(-90deg);
     transition-delay: 0s;
 }
 
-#curtain.active span:nth-child(1) {
-    z-index: 1;
-    transition-delay: 0.1s;
-}
-
+// #curtain.active span:nth-child(1) {
+//     z-index: 1;
+//     transition-delay: 0.1s;
+// }
 #curtain.active span:nth-child(1) {
     z-index: 2;
     transition-delay: 0.2s;
@@ -140,7 +138,7 @@ h1.hero__title {
     right: 20px;
     width: 100px;
     height: 100px;
-    color: lightcoral;
+    color: $lightpink;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -183,7 +181,7 @@ section {
     background-position: center;
     clip-path: circle(0px at 50% 60%);
     h2 {
-        color: lightcoral;
+        color: $lightpink;
         display: flex;
         justify-content: center;
         font-family: "MuseoModerno", cursive;
@@ -195,26 +193,6 @@ section {
         width: 320px;
         // height: 288px;
         // position: relative;
-        @media screen and (min-width: 600px) and (min-width: 768px) {
-            justify-content: unset;
-            margin-top: 45vh;
-            margin-left: 5vh;
-        }
-        @media screen and (min-width: 1024px) {
-            font-size: 8em;
-            margin-top: 37vh;
-            margin-left: 6vh;
-        }
-        // @media screen and (min-width: 1440px) {
-        //     font-size: 8em;
-        //     margin-top: 37vh;
-        //     margin-left: 6vh;
-        // }
-        @media screen and (min-width: 2560px) {
-            font-size: 11em;
-            margin-top: 70vh;
-            width: 100%;
-        }
     }
 }
 
@@ -223,24 +201,10 @@ section h3 {
     display: none;
 }
 
-@media screen and (min-width: 2560px) {
-    section h3 {
-        color: lightcoral;
-        visibility: visible;
-        font-family: "MuseoModerno", cursive;
-        font-weight: 800;
-        font-size: 3em;
-        font-style: italic;
-        margin-left: 6vh;
-        z-index: 1;
-        display: block;
-    }
-}
-
 .scroll__container {
     position: relative;
     margin-top: 200vh;
-    background: linear-gradient(360deg, #100423 0%, #734b6d 89.88%);
+    background: $purple-gradient;
     padding: 100px;
     h2 {
         font-size: 2.5em;
