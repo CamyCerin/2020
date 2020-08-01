@@ -202,9 +202,38 @@ section {
         }
         @media screen and (min-width: 1024px) {
             font-size: 8em;
-            margin-top: 50vh;
+            margin-top: 37vh;
             margin-left: 6vh;
         }
+        // @media screen and (min-width: 1440px) {
+        //     font-size: 8em;
+        //     margin-top: 37vh;
+        //     margin-left: 6vh;
+        // }
+        @media screen and (min-width: 2560px) {
+            font-size: 11em;
+            margin-top: 70vh;
+            width: 100%;
+        }
+    }
+}
+
+section h3 {
+    visibility: hidden;
+    display: none;
+}
+
+@media screen and (min-width: 2560px) {
+    section h3 {
+        color: lightcoral;
+        visibility: visible;
+        font-family: "MuseoModerno", cursive;
+        font-weight: 800;
+        font-size: 3em;
+        font-style: italic;
+        margin-left: 6vh;
+        z-index: 1;
+        display: block;
     }
 }
 
