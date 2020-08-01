@@ -1,0 +1,369 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /* font: inherit; */
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media screen and (min-width: 600px) and (min-width: 768px) {
+  section h2 {
+    justify-content: unset;
+    margin-top: 45vh;
+    margin-left: 5vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section h2 {
+    font-size: 8em;
+    margin-top: 37vh;
+    margin-left: 6vh;
+  }
+}
+@media screen and (min-width: 1440px) {
+  section h2 {
+    font-size: 8em;
+    margin-top: 37vh;
+    margin-left: 6vh;
+  }
+}
+@media screen and (min-width: 2560px) {
+  section h2 {
+    font-size: 11em;
+    margin-top: 70vh;
+    width: 100%;
+  }
+
+  section h3 {
+    color: lightcoral;
+    visibility: visible;
+    font-family: "MuseoModerno", cursive;
+    font-weight: 800;
+    font-size: 3em;
+    font-style: italic;
+    margin-left: 6vh;
+    z-index: 1;
+    display: block;
+  }
+}
+body {
+  background-color: #ececec;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+nav h4 {
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "MuseoModerno", cursive;
+  font-weight: 400;
+  font-size: 1.3em;
+  padding: 20px 20px;
+}
+
+h1.hero__title {
+  color: lightcoral;
+  display: flex;
+  justify-content: center;
+  font-family: "MuseoModerno", cursive;
+  font-weight: 800;
+  font-size: 6em;
+  padding-top: 35vh;
+  z-index: 1;
+  position: relative;
+}
+
+#curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+#curtain span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  display: block;
+  transform-origin: bottom left;
+  transition: 0.5s ease-in-out;
+  transform: rotate(-90deg);
+}
+#curtain ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+#curtain ul li a {
+  text-decoration: none;
+  color: #222121;
+  font-size: 2.2em;
+  text-align: left;
+  font-weight: 900;
+  display: block;
+  font-family: "MuseoModerno", cursive;
+  line-height: 1.54;
+  text-transform: uppercase;
+  z-index: 10;
+}
+#curtain span:nth-child(2) {
+  background: lightsteelblue;
+  transform: rotate(-90deg);
+  transition-delay: 0.1s;
+}
+#curtain span:nth-child(3) {
+  background: lightcoral;
+  transform: rotate(-90deg);
+  transition-delay: 0s;
+}
+#curtain .active span:nth-child(1) {
+  z-index: 1;
+  transition-delay: 0.1s;
+}
+#curtain .active span:nth-child(1) {
+  z-index: 2;
+  transition-delay: 0.2s;
+}
+#curtain .active span:nth-child(3) {
+  z-index: 3;
+  transition-delay: 0.3s;
+}
+
+#curtain span:nth-child(2) {
+  background: lightsteelblue;
+  transform: rotate(-90deg);
+  transition-delay: 0.1s;
+}
+
+#curtain span:nth-child(3) {
+  background: lightcoral;
+  transform: rotate(-90deg);
+  transition-delay: 0s;
+}
+
+#curtain.active span:nth-child(1) {
+  z-index: 2;
+  transition-delay: 0.2s;
+  background: yellow !important;
+}
+
+#curtain.active span:nth-child(3) {
+  z-index: 3;
+  transition-delay: 0.3s;
+}
+
+.toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  color: lightcoral;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#curtain.active span {
+  transform: rotate(0deg);
+}
+
+#curtain.active .toggle {
+  color: #222121;
+  z-index: 10;
+}
+
+ul {
+  position: absolute;
+  z-index: 10;
+  transition: 0.5;
+  visibility: hidden;
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+#curtain.active ul {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+
+section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/purplehaze.2dea7834.JPG);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  clip-path: circle(0px at 50% 60%);
+}
+section h2 {
+  color: lightcoral;
+  display: flex;
+  justify-content: center;
+  font-family: "MuseoModerno", cursive;
+  font-weight: 800;
+  font-size: 6em;
+  margin-top: 48vh;
+  margin-left: 3vh;
+  z-index: 1;
+  width: 320px;
+}
+
+section h3 {
+  visibility: hidden;
+  display: none;
+}
+
+.scroll__container {
+  position: relative;
+  margin-top: 200vh;
+  background: linear-gradient(360deg, #100423 0%, #734b6d 89.88%);
+  padding: 100px;
+}
+.scroll__container h2 {
+  font-size: 2.5em;
+  margin-bottom: 25px;
+}
+.scroll__container h3 {
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=/style.500aa19d.css.map */
